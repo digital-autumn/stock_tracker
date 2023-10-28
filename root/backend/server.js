@@ -5,7 +5,7 @@ import userRoutes from './routes/users.js'
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const localhost = `http://localhost:${PORT}`;
 
 app.use(express.json());
